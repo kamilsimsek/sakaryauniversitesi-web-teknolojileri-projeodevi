@@ -1,0 +1,260 @@
+
+
+.menlist{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.navbarbutton{
+    color: white;
+    background-color: white;
+}
+.menlist:hover{
+    height:35px;
+    width:100px;
+    
+    
+    position: relative;
+  
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: white;
+    background-clip: text;
+    background: linear-gradient(to bottom, rgb(44, 131, 0), #fdfdfd);
+    box-shadow: 10px 3px 20px 3px black;
+    transform: scale(1.1);
+    text-align: end; 
+    
+    }
+.menlist:hover a{
+    color: white;
+    font-weight:bold;
+}
+.loginBox{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    background-color: transparent;
+    
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #333;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.loginBox input[type="email"],.loginBox input[type ="password"]{
+    background: none;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #18c508;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(0, 162, 40);
+    border-radius: 24px;
+    transition: 0.25s;
+    background-color: #18c508;
+    opacity: 0.8;
+}
+.loginBox h1{
+    background: linear-gradient(to bottom, rgb(73, 220, 0), #525252);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.loginBox input[type="email"]:focus,.loginBox input[type ="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+    transform: translate(-10%); 
+}
+.loginBox input[type="submit"]{
+    background: none;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 2px solid #18c508;
+    padding: 14px 40px;
+    font-weight: bolder;
+    outline: none;
+    color: rgb(0, 255, 8);
+    border-radius: 24px;
+    cursor: pointer;
+}
+.loginBox input[type="submit"]:hover{
+    background: white;
+    opacity: 0.4;
+}
+.sliderresim{
+    height: 550px;
+    
+}
+.tanim h3{
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(1,255,0,0.76234243697479) 100%, rgba(0,212,255,1) 100%);  
+    height: 45px;
+    color: #111111;
+    margin-left: -75px;
+    
+}
+.tanim{
+    height: 300px;
+    width: 960px;
+    margin-right: auto;
+    margin-left: 250px;
+    
+
+}
+.konyaTanitim{
+    float: left;
+    display: inline-block;
+    height: 600px;
+    width: 310px;
+    margin: 10px;
+    color: black;
+    background-color: rgba(1, 255, 0, 0.6);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4%;
+}
+.bar{
+    background: rgb(189,189,189);
+    background: linear-gradient(90deg, rgba(189,189,189,1) 0%, rgba(1,255,0,1) 100%, rgba(0,212,255,1) 100%);
+    opacity: 0.8;
+    
+}
+.menuitems{
+    color: black;
+}
+.fotoYazi p{
+    font-weight: bold;
+    color: #e0e0e0;
+
+}
+.fotoYazi h5{
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: green;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.sehrimBilgi{
+    font-family: 'Montserrat', sans-serif;
+}
+.hakkimdaBölüm{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(199, 199, 199, 0.2);
+}
+hr.ayrac { 
+    height: 30px; 
+    border-style: solid; 
+    border-color: #3c3c3c; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+    opacity: 0.8;
+} 
+hr.ayrac:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+}
+.kart1{
+    width: 250px;
+    margin-left: 430px;
+
+}
+.esporliste{
+    list-style-type: none;
+}
+a.site{
+    border-style: solid;
+    border-width: 2px;
+    color: chartreuse;
+}
+a.site:hover{
+    background-color: chartreuse;
+    border-color: chartreuse;
+    color: white;
+}
+section.genelTanitim{
+    margin-left: 400px;
+    margin-top: -460px;
+    
+}
+aside.genelBilgi{
+    padding-top: 100px;
+    padding-left: 50px;
+    
+    
+}p.tecrubeTarih{
+    margin-left: 90px; 
+    font-size: 10px;
+    margin-top: -50px;
+}
+.genelBilgiList{
+    list-style-type: none;
+}
+.isTecrubesi{
+    height: 200px;
+}
+.yetenekIsmi{
+    width: 25%;
+}
+.yetenekMiktar{
+    width: 40%;
+    margin: 0 80px;
+    margin-top: -14px;
+    height: 8px;
+    background: rgb(136, 136, 136);
+    position: relative;
+    
+}
+.yetenekMiktar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(91, 211, 31);
+}
+section.takimLogo.mx-1{
+    padding-left: 300px;
+}
+.iletgitTable{
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 600px;
+    text-align: center;
+    opacity: 0.6;
+}
+footer.hkFooter{
+    margin-top: 85px;
+}
