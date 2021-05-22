@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="js/iletcontrol.js" ></script>
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item text-center menlist">
-              <a class="nav-link active menuitems" aria-current="page" href="giris.html">Giriş</a>
+              <a class="nav-link active menuitems" aria-current="page" href="anasayfa.html">Ana Sayfa</a>
             </li>
             <li class="nav-item text-center menlist">
               <a class="nav-link menuitems" href="index.html">Hakkımda</a>
@@ -43,7 +42,7 @@
               <a class="nav-link menuitems" href="takim.html">Takımım</a>
             </li>
             <li class="nav-item text-center menlist">
-              <a class="nav-link menuitems" href="ilgi.html">İlgi Alanı</a>
+              <a class="nav-link menuitems" href="#">İlgi Alanı</a>
             </li>
             <li class="nav-item text-center menlist">
               <a class="nav-link menuitems" href="#">İletişim</a>
@@ -53,52 +52,40 @@
           </ul>
         </div>
       </div>
-    </nav><br><br><br>
+    </nav>
     
     <div class="container">
 			
-			<form action="iletgit.html" name="Form" onsubmit="return control()">
+			<?php 
 
-				<div class="form-group">
-					<label for="name">İsim</label>
-					<input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
+				include("kullanicilar.php");
 
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
-					<small class="form-text text-muted">Zorunlu alan</small>
-				</div>
-        <div>
-          <select class="form-select" name="cinsiyet" aria-label="Default select example">
-            <option selected>Cinsiyet</option>
-            <option value="1">Erkek</option>
-            <option value="2">Kadın</option>
-          </select>
-          <small class="form-text text-muted">Zorunlu alan</small>
-        </div>
-        
-				<div class="form-group">
-					<label for="message">Mesaj</label>
-					<textarea name="message" id="message" rows="5" class="form-control"></textarea>
-				</div>
-        <br>
 
-				<button class="btn btn-light" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
-
-				<button class="btn btn btn-light" type="submit" id="sub">Gönder</button>
-
-				<br><br><br>
-
-			</form>
-
+				if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
+				{
+			       $_SESSION["login"] = "true";
+			       $_SESSION["user"] = $user;
+			       $_SESSION["pass"] = $pass;
+			
+			       echo("SİTEYE GİRİŞ YAPTINIZ HOŞGELDİNİZ !!");
+			
+				}
+			
+				else 
+				{
+			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
+			            echo "!!!TEKRAR DENEYİN!!!";
+			            header("Refresh: 1; url=login.php");
+			    }
+			
+			?>
+			
 		</div>
-    
+
     
         
        
-    <footer class="bg-dark py-5 mt-3">Tüm Hakları Saklıdır &copy; | 2021 
+    <footer class="bg-dark py-5">Tüm Hakları Saklıdır &copy; | 2021 
       Designed by Kamil Şimşek
     </footer>
    
