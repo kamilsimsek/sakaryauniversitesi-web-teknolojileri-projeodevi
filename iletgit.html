@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script src="js/iletgit.js" ></script>
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item text-center menlist">
-              <a class="nav-link active menuitems" aria-current="page" href="anasayfa.html">Ana Sayfa</a>
+              <a class="nav-link active menuitems" aria-current="page" href="giris.html">Giriş</a>
             </li>
             <li class="nav-item text-center menlist">
               <a class="nav-link menuitems" href="index.html">Hakkımda</a>
@@ -39,7 +40,7 @@
               <a class="nav-link menuitems" href="sehrim.html">Şehrim</a>
             </li>
             <li class="nav-item text-center menlist">
-              <a class="nav-link menuitems" href="takim.html">Takımım</a>
+              <a class="nav-link menuitems" href="#">Takımım</a>
             </li>
             <li class="nav-item text-center menlist">
               <a class="nav-link menuitems" href="#">İlgi Alanı</a>
@@ -52,22 +53,63 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav><br><br><br>
     
-    <div>
-      <form class="loginBox" action="bilgiler.php" method="post">
-        <h1>Login</h1>
-        <input type="email" name="mail" placeholder="E-mail">
-        <input type="password" name="pass" placeholder="Password">
-        <input type="submit" name="" value="Login">
+    <div class="container">
+			
+        <div class="row">
 
-      </form>
+
+
+
+           
+
+            <table class="table iletgitTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Başarılı Bir şekilde Gönderdiniz :)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>İsminiz</td>
+                            <td>
+                                <script>document.write(name);
+                                </script>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>E-Mail</td>
+                            <td>
+                                <script>document.write(email);
+                                </script>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Mesajınız</td>
+                            <td>
+                                <script>document.write(message);
+                                </script>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                
+            </table>	
+
+
+        </div>
+
     </div>
+
     
     
         
        
-    <footer class="bg-dark py-5">Tüm Hakları Saklıdır &copy; | 2021 
+    <footer class="bg-dark py-5 mt-4">Tüm Hakları Saklıdır &copy; | 2021 
       Designed by Kamil Şimşek
     </footer>
    
