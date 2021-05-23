@@ -42,10 +42,10 @@
               <a class="nav-link menuitems" href="takim.html">Takımım</a>
             </li>
             <li class="nav-item text-center menlist">
-              <a class="nav-link menuitems" href="#">İlgi Alanı</a>
+              <a class="nav-link menuitems" href="ilgi.html">İlgi Alanı</a>
             </li>
             <li class="nav-item text-center menlist">
-              <a class="nav-link menuitems" href="#">İletişim</a>
+              <a class="nav-link menuitems" href="iletisim.html">İletişim</a>
             </li>
             
             
