@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item text-center menlist">
-              <a class="nav-link active menuitems" aria-current="page" href="anasayfa.html">Ana Sayfa</a>
+              <a class="nav-link active menuitems" aria-current="page" href="giris.html">Giriş</a>
             </li>
             <li class="nav-item text-center menlist">
               <a class="nav-link menuitems" href="index.html">Hakkımda</a>
@@ -53,12 +53,13 @@
         </div>
       </div>
     </nav>
+    <br><br><br>
     
-    <div class="container kontrolLogin">
+    <div class="container ml-4">
 			
 			<?php 
 
-				include("kullanicilar.php");
+				include("kullanici.php");
 
 
 				if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
@@ -75,7 +76,7 @@
 				{
 			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
 			            echo "!!!TEKRAR DENEYİN!!!";
-			            header("Refresh: 0; url=login.php");
+			            header("Refresh: 0; url=giris.html");
 			    }
 			
 			?>
