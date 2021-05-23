@@ -55,7 +55,7 @@
     </nav>
     <br><br><br>
     
-    <div class="container ml-4">
+    <div class="container ml-3">
 			
 			<?php 
 
@@ -68,7 +68,7 @@
 			       $_SESSION["user"] = $user;
 			       $_SESSION["pass"] = $pass;
 			
-			       echo("SİTEYE GİRİŞ YAPTINIZ HOŞGELDİNİZ !!");
+			       echo("<font color='#fffff'SİTEYE GİRİŞ YAPTINIZ HOŞGELDİNİZ $user !!");
 			
 				}
 			
