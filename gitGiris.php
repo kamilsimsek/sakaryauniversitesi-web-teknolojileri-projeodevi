@@ -54,7 +54,7 @@
       </div>
     </nav>
     
-    <div class="container">
+    <div class="container kontrolLogin">
 			
 			<?php 
 
@@ -75,7 +75,7 @@
 				{
 			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
 			            echo "!!!TEKRAR DENEYİN!!!";
-			            header("Refresh: 1; url=login.php");
+			            header("Refresh: 0; url=login.php");
 			    }
 			
 			?>
