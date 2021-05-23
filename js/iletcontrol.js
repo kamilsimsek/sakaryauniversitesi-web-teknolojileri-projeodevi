@@ -3,14 +3,14 @@ function control()
 			var x = document.forms["Form"]["name"].value;
 			if (x == "") 
 			{
-				alert("İsim zorunlu alandır!");
+				alert("İsim kısmını boş bırakamazsınız!");
 				return false;
 			}
 
 			var y = document.forms["Form"]["email"].value;
 			if (y == "") 
 			{
-				alert("Mail kısmı boş bırakılamaz!");
+				alert("Mail kısmını boş bırakamazsınız!");
 				return false;
 			}
 

@@ -68,14 +68,14 @@
 			       $_SESSION["user"] = $user;
 			       $_SESSION["pass"] = $pass;
 			
-			       echo("<font color='#fffff'SİTEYE GİRİŞ YAPTINIZ HOŞGELDİNİZ $user !!");
+			       echo("<font color='#fffff'>Girişiniz başarıyla gerçeleştirildi. Hoşgeldin $user !</font>");
 			
 				}
 			
 				else 
 				{
-			            echo "Kullancı Adı veya Şifre Yanlış.<br>";
-			            echo "!!!TEKRAR DENEYİN!!!";
+			            echo "<font color='#ffffc'>Kullancı adı veya şifre yanlış !.</font><br>";
+			            echo "<font color='#ffffc'>Yönlendiriliyorsunuz !</font>";
 			            header("Refresh: 0; url=giris.html");
 			    }
 			
